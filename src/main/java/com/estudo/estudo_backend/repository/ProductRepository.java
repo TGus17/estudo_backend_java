@@ -1,11 +1,11 @@
 package com.estudo.estudo_backend.repository;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Repository;
 import com.estudo.estudo_backend.model.Product;
+import com.estudo.estudo_backend.model.exception.ResourceNotFoundException;
 
 @Repository
 public class ProductRepository {
@@ -62,7 +62,7 @@ public class ProductRepository {
     Optional<Product> foundProduct = this.getById(product.getId());
 
     if (foundProduct.isEmpty()) {
-      throw new InputMismatchException("Produto não localizado.");
+      throw new ResourceNotFoundException("Produto não localizado.");
     }
     this.delete(product.getId());
     products.add(product);

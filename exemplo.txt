@@ -9,3 +9,6 @@ Repositório de produto: OK
 
 Serviço de produto: OK
     getAll, getById, add, delete, update
+
+Controller de produto: OK
+    getAll, getById, add, delete, update
