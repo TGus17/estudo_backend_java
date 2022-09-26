@@ -17,7 +17,7 @@ import com.estudo.estudo_backend.services.ProductService;
 
 @RestController
 @RequestMapping("/api/produtos")
-public class ProdutoController {
+public class ProductController {
     @Autowired
     private ProductService productService;
 

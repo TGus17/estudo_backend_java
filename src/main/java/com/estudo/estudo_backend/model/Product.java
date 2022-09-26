@@ -1,8 +1,16 @@
 package com.estudo.estudo_backend.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
     
-    //#region attributes
+    //#region Attributes
+    @Id // vai transformar esse atributo (id) em primary key
+    @GeneratedValue(strategy = GenerationType.AUTO) // autoincrementar essa chave (atributo)
     private Integer id;
     private String name;
     private Integer quantity;
