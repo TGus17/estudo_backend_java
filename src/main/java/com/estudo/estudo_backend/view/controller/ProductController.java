@@ -1,4 +1,4 @@
-package com.estudo.estudo_backend.controller;
+package com.estudo.estudo_backend.view.controller;
 
 import java.util.List;
 import java.util.Optional;
